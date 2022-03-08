@@ -1,2 +1,2 @@
-FROM ubuntu
-CMD apt update && apt-get install tomcat -y
+FROM tomcat
+COPY /var/lib/jenkins/workspace/pi/targets/my-app1.0-SNAPSHOT.jar /var/lib/tomcat9/webapps/my-app1.0-SNAPSHOT.jar
